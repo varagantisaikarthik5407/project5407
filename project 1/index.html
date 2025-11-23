@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vsk project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:rgb(254, 252, 252);
+        }
+        .container{
+            background-color: black;
+            padding: 26px;
+            display: flex;
+            justify-content:space-between; 
+            flex-wrap: wrap;
+
+        }
+        .container1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        H1{
+            font-size: 35PX;
+            color: red;
+        }
+        
+        li{
+            text-decoration: none;
+            font-size: 25px;
+        }
+        a{
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 10px;
+            transition: 0.2s;
+        }
+        a:hover{
+            background-color:white;
+            color: black;
+            
+        }
+        label{
+            color: white;
+            font-size: 30px;
+        }
+        input{
+            font-size: 25px;
+            border-radius: 10px;
+            outline: none;
+            padding: 5px;
+        }
+        .img1 img{
+            width: 200px;
+            height: 250px;
+            margin:15px;
+            object-fit: cover;
+            
+            
+
+        }
+        .img1 h1{
+            color: rgb(6, 6, 6);
+            margin-left :35px;
+            font-size:25px;
+        }
+        .img1 h2{
+            margin-left:23px;
+        }
+        .img2 img{
+            width: 200px;
+            height:250px ;
+            margin: 15px;
+        }
+        .img2 h1{
+            color: rgb(13, 13, 13);
+            margin-left: 90px;
+            font-size: 30px;
+        }
+        .img3 img{
+            width: 200px;
+            height:250px ;
+            margin: 15px;
+        }
+        .img3 h1{
+            color: rgb(13, 13, 13);
+            margin-left: 120px;
+            font-size: 30px;
+        }
+        @media only screen and (max-width: 680px) {
+    
+    /* 1. Target the Navigation Container */
+    .container {
+        /* Force all items (links, VSK, search) to stack vertically */
+        flex-direction: column; 
+        
+        /* Ensure items can wrap if they still don't fit */
+        flex-wrap: wrap; 
+        
+        /* Center everything horizontally when stacked */
+        align-items: center; 
+        
+        /* Reduce the large padding you have on the desktop */
+        padding: 10px 0; 
+        overflow-x: hidden;
+    }
+
+    /* 2. Target the Search Bar Input */
+    /* This rule is critical to stop the search box from overflowing the screen */
+    .container input {
+        /* Make it take up most of the screen width */
+        width: 90%; 
+        /* Ensure it's responsive */
+        max-width: 400px; 
+        /* Add some space above it so it doesn't touch VSK */
+        margin-top: 10px; 
+    }
+    .container1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+        
+    
+        
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-links">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="#">bug</a>
+            
+            </div>
+            <div class="logo">
+                <strong>
+                  <H1>VSK</H1>
+                </strong>
+            </div>
+            <div class="search">
+             <label for="search">search :</label>
+             <input type="search" name="name" placeholder="search">
+            </div>
+        </div>
+    </nav>
+    <div class="container1">
+        <div class="box">
+            <div class="img1">
+               <a href="mitramandali.html"> <img src="images/mitra mandali.jpeg" alt="" ></a>
+            <h1>mitra mandali</h1>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="img1">
+               <a href="kantara.html"><img src="images/kantara chapter 1.jpeg" alt=""></a>
+            <h1>kantara chapter 1</h1>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="img1">
+                <a href="kalki.html"><img src="images/kalki 2898 ad.jpeg" alt=""></a>
+            <h1>kalki 2898 ad</h1>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="img2">
+                <a href="salaar.html"><img src="images/salaar.jpeg" alt=""></a>
+            <h1>salaar</h1>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="img2">
+                <a href="marco.html"><img src="images/marco.jpeg" alt=""></a>
+            <h1>marco</h1>
+            </div>
+        </div>
+        <div class="box6">
+            <div class="img1">
+               <a href="baahubali.html"><img src="images/baahubali.jpeg" alt=""></a>
+            <h2>baahubali:the begnning</h2>
+            </div>
+        </div>
+        <div class="box7">
+            <div class="img2">
+                <a href="rana_naidu.html"><img src="images/Rana naidu.jpeg" alt=""></a>
+            <h1>Rana naidu</h1>
+            </div>
+        </div>
+        <div class="box8">
+            <div class="img2">
+                <a href="animal.html"><img src="images/Animal.jpeg" alt=""></a>
+            <h1>Animal</h1>
+            </div>
+        </div>
+        <div class="box9">
+            <div class="img2">
+               <a href="saaho.html"> <img src="images/saaho.jpeg" alt=""></a>
+            <h1>saaho</h1>
+            </div>
+        </div>
+        <div class="box10">
+            <div class="img1">
+               <a href="og.html"> <img src="images/They Call Him OG.jpeg" alt=""></a>
+            <h1>They Call Him OG</h1>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img2">
+                <a href="panjaa.html"><img src="images/panjaa.jpeg" alt=""></a>
+            <h1>panjaa</h1>
+            </div>
+        </div>
+        <div class="box12">
+            <div class="img3">
+                <a href="billa.html"><img src="images/Billa.avif" alt=""></a>
+            <h1>Billa</h1>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="box11">
+            <div class="img1">
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        
+         
+        
+    </div>
+</body>
+</html>
